@@ -69,9 +69,15 @@
         <table>
             <tr>
                 <td onclick="clearDisplay()">C</td>
+                <td onclick="backspace()">⌫</td>
+                <td onclick="calculatePercentage()">%</td>
+                <td onclick="appendToDisplay('/')">/</td>
+            </tr>
+            <tr>
                 <td onclick="appendToDisplay('7')">7</td>
                 <td onclick="appendToDisplay('8')">8</td>
                 <td onclick="appendToDisplay('9')">9</td>
+                <td onclick="appendToDisplay('*')">*</td>
             </tr>
             <tr>
                 <td onclick="appendToDisplay('4')">4</td>
@@ -86,16 +92,10 @@
                 <td onclick="appendToDisplay('-')">-</td>
             </tr>
             <tr>
+                <td onclick="appendToDisplay('e')">e</td>
                 <td onclick="appendToDisplay('0')">0</td>
                 <td onclick="appendToDisplay('.')">.</td>
                 <td onclick="calculate()">=</td>
-                <td onclick="appendToDisplay('*')">*</td>
-            </tr>
-            <tr>
-                <td onclick="appendToDisplay('/')">/</td>
-                <td onclick="toggleSign()">+/-</td>
-                <td onclick="calculatePercentage()">%</td>
-                <td onclick="backspace()">⌫</td>
             </tr>
             <tr>
                 <td onclick="calculateSquare()">x²</td>
@@ -113,7 +113,7 @@
                 <td onclick="calculateSin()">sin</td>
                 <td onclick="calculateCos()">cos</td>
                 <td onclick="calculateTan()">tan</td>
-                <td onclick="appendToDisplay('e')">e</td>
+                <td onclick="toggleSign()">+/-</td>
             </tr>
         </table>
     </div>
